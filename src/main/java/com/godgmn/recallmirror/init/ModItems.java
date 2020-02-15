@@ -1,5 +1,7 @@
 package com.godgmn.recallmirror.init;
 
+import com.godgmn.recallmirror.RecallMirror;
+
 import Items.ItemPortalScroll;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;

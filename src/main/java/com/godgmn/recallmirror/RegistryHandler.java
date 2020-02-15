@@ -1,10 +1,12 @@
 package com.godgmn.recallmirror;
 
 import com.godgmn.recallmirror.init.ModBlocks;
+import com.godgmn.recallmirror.init.ModItems;
 
 import Items.ItemPortalScroll;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.util.ResourceLocation;
@@ -20,7 +22,7 @@ public class RegistryHandler
 	public static void onBlockRegistry(RegistryEvent.Register<Block> event)
 	{
 		IForgeRegistry<Block> registry = event.getRegistry();
-		registerBlock(registry, "butt_block", new Block(Material.SAND));
+		registerBlock(registry, "butt_block", new Block(Material.SAND).setCreativeTab(CreativeTabs.DECORATIONS));
 	}
 
     @SubscribeEvent
@@ -28,7 +30,7 @@ public class RegistryHandler
     {
     IForgeRegistry<Item> registry = event.getRegistry();
 	registerItem(registry, "butt_block", new ItemBlock(ModBlocks.BUTT_BLOCK));
-	//registerItem(registry, RecallMirror.PORTAL_SCROLL, new ItemPortalScroll());
+	//registerItem(registry, "portal_scroll", new ItemPortalScroll(ModItems.tutorialItem));
     }
 
     // freebie helper methods
