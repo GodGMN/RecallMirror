@@ -2,7 +2,7 @@
 
 **DOWNLOADS** *(Minecraft 1.12.2)*
 
-**Version 1.11** - [Download](https://github.com/GodGMN/RecallMirror/raw/master/RecallMirror-1.11.jar)
+**Version 1.1.1** - [Download](https://github.com/GodGMN/RecallMirror/raw/master/RecallMirror-1.1.1.jar)
 
 Version changes: added lore on the Nether Mirror to display extra info like depth so you can know if you were in a cave or in the surface for example.
 
@@ -64,18 +64,26 @@ Infinite uses. You need to use a Recall Mirror first.
 
 ## **Changelog**
 
-**Version 1.11**
+**Version 1.1.1**
 
 Version changes: added lore on the Nether Mirror to display extra info like depth so you can know if you were in a cave or in the surface for example.
 
-**Version 1.10**
+**Version 1.1.0**
 
 Version changes: added Nether Mirrors. They let you go back to your last Recall Mirror teleport position.
 
-**Version 1.01**
+**Version 1.0.1**
 
 Version changes: fixed a bug when using the Recall Mirror without a bed.
 
-**Version 1.00**
+**Version 1.0.0**
 
 Mod published. Portal Scrolls are not working so they are purely cosmetics for item frames. The block of literal shit doesn't have any property yet but you can craft and place it.
+
+----
+
+**How do I set up version number?**
+
+Aight no one asked but I'm curious about how do others set their version number. For me it's simple: the first number is reserved for big updates. Will probably stay in 1 forever. The second number is the actual update version, whenever I add something new, it will grow by one. The third and last number grows by one everytime I fix something like a bug or I update a description. Goes back to zero with new "second number" updates.
+
+What does this mean to you? Probably nothing, but if you are in version, let's say 1.4.2 and latest is 1.4.4 I have probably fixed some descriptions or bugs. If it's 1.5.0 you're probably missing out a new item or functionality.
