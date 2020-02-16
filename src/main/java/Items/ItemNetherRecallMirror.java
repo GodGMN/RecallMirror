@@ -1,5 +1,8 @@
 package Items;
 
+import java.util.List;
+
+import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.SoundEvents;
@@ -20,6 +23,19 @@ public class ItemNetherRecallMirror extends Item{
 		this.maxStackSize = 1;
         this.setCreativeTab(CreativeTabs.TOOLS);
 	}
+	
+	@Override
+    public void addInformation(ItemStack stack, World player, List<String> list, ITooltipFlag whatisthis) {
+        
+        list.add("Returns you to where you used the Recall Mirror last time.");
+        list.add("");
+        if(ItemRecallMirror.oldPlayerCoords == null) { list.add("You haven't used the Recall Mirror yet."); }
+        else
+        {
+        	list.add("\u00A74Ready to teleport back.");
+        	list.add("\u00A74Depth: \u00A7r" + ItemRecallMirror.oldPlayerCoords.getY() );
+        }
+    }
 	
     public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn)
     {
