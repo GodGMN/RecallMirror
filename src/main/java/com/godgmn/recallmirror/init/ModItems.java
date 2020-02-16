@@ -3,6 +3,7 @@ package com.godgmn.recallmirror.init;
 import com.godgmn.recallmirror.RecallMirror;
 
 import Items.ItemPortalScroll;
+import Items.ItemRecallMirror;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
@@ -22,7 +23,7 @@ public class ModItems
 	public static void init()
 	{
 		portalScroll = new ItemPortalScroll("portal_scroll").setCreativeTab(CreativeTabs.TOOLS).setMaxStackSize(40);
-		recallMirror = new ItemPortalScroll("recall_mirror").setCreativeTab(CreativeTabs.TOOLS).setMaxStackSize(1);
+		recallMirror = new ItemRecallMirror("recall_mirror");
 	}
 	
 	@SubscribeEvent
