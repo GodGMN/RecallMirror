@@ -4,6 +4,7 @@ import com.godgmn.recallmirror.RecallMirror;
 
 import Items.ItemPortalScroll;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.client.model.ModelLoader;
@@ -19,7 +20,7 @@ public class ModItems
 	
 	public static void init()
 	{
-		tutorialItem = new ItemPortalScroll("portal_scroll");
+		tutorialItem = new ItemPortalScroll("portal_scroll").setCreativeTab(CreativeTabs.TOOLS).setMaxStackSize(40);;
 	}
 	
 	@SubscribeEvent
