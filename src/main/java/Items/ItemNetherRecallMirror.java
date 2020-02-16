@@ -1,12 +1,10 @@
 package Items;
 
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.entity.item.EntityEnderPearl;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.stats.StatList;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.EnumActionResult;
 import net.minecraft.util.EnumHand;
@@ -14,11 +12,9 @@ import net.minecraft.util.SoundCategory;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-public class ItemRecallMirror extends Item{
+public class ItemNetherRecallMirror extends Item{
 	
-	public static BlockPos oldPlayerCoords = null;
-	
-	public ItemRecallMirror(String name) {
+	public ItemNetherRecallMirror(String name) {
 		setUnlocalizedName(name);
 		setRegistryName(name);
 		this.maxStackSize = 1;
@@ -28,19 +24,18 @@ public class ItemRecallMirror extends Item{
     public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn)
     {
         ItemStack itemstack = playerIn.getHeldItem(handIn);
-        boolean playerhasbed = true;
+        boolean playerUsedFirstMirror = true;
         
-        if(playerIn.bedLocation == null) { playerhasbed = false; }
+        if(ItemRecallMirror.oldPlayerCoords == null) { playerUsedFirstMirror = false; }
         
-        if(playerhasbed) {
-        	oldPlayerCoords = playerIn.getPosition();
-        
+        if(playerUsedFirstMirror) {
+        	
         	BlockPos bed = playerIn.getBedLocation();
-        	double bedX = bed.getX();
-        	double bedY = bed.getY();
-        	double bedZ = bed.getZ();
+        	double fmX = ItemRecallMirror.oldPlayerCoords.getX();
+        	double fmY = ItemRecallMirror.oldPlayerCoords.getY();
+        	double fmZ = ItemRecallMirror.oldPlayerCoords.getZ();
         
-        	playerIn.setPositionAndUpdate(bedX, bedY+1, bedZ);
+        	playerIn.setPositionAndUpdate(fmX, fmY, fmZ);
         	
         	playerIn.getCooldownTracker().setCooldown(this, 200);
             	

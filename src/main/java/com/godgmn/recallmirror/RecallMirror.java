@@ -23,6 +23,7 @@ public class RecallMirror
 	public static final String BUTT_BLOCK = "butt_block";
 	public static final String PORTAL_SCROLL = "portal_scroll";
 	public static final String RECALL_MIRROR = "recall_mirror";
+	public static final String NETHER_RECALL_MIRROR = "nether_recall_mirror";
     
     private static Logger logger;
 

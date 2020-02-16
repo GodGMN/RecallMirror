@@ -2,6 +2,7 @@ package com.godgmn.recallmirror.init;
 
 import com.godgmn.recallmirror.RecallMirror;
 
+import Items.ItemNetherRecallMirror;
 import Items.ItemPortalScroll;
 import Items.ItemRecallMirror;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -19,11 +20,13 @@ public class ModItems
 	
 	static Item portalScroll;
 	static Item recallMirror;
+	static Item netherRecallMirror;
 	
 	public static void init()
 	{
 		portalScroll = new ItemPortalScroll("portal_scroll").setCreativeTab(CreativeTabs.TOOLS).setMaxStackSize(40);
 		recallMirror = new ItemRecallMirror("recall_mirror");
+		netherRecallMirror = new ItemNetherRecallMirror("nether_recall_mirror");
 	}
 	
 	@SubscribeEvent
@@ -31,6 +34,7 @@ public class ModItems
 	{
 		event.getRegistry().registerAll(portalScroll);
 		event.getRegistry().registerAll(recallMirror);
+		event.getRegistry().registerAll(netherRecallMirror);
 	}
 
 
@@ -39,6 +43,7 @@ public class ModItems
 	{
 		registerRender(portalScroll);
 		registerRender(recallMirror);
+		registerRender(netherRecallMirror);
 		registerRender(Item.getItemFromBlock(ModBlocks.BUTT_BLOCK));
 	}
 
