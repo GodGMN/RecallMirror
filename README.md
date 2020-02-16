@@ -3,9 +3,11 @@
 **DOWNLOADS** *(Minecraft 1.12.2)*
 
 **Version 1.01** -  [Download](https://github.com/GodGMN/RecallMirror/raw/master/RecallMirror-1.01.jar)
+
 Version changes: fixed a bug when using the Recall Mirror without a bed.
 
 **Version 1.00**
+
 Mod published. Portal Scrolls are not working so they are purely cosmetics for item frames. The block of literal shit doesn't have any property yet but you can craft and place it.
 
 
