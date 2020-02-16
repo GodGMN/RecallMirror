@@ -16,24 +16,28 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 public class ModItems
 {
 	
-	static Item tutorialItem;
+	static Item portalScroll;
+	static Item recallMirror;
 	
 	public static void init()
 	{
-		tutorialItem = new ItemPortalScroll("portal_scroll").setCreativeTab(CreativeTabs.TOOLS).setMaxStackSize(40);;
+		portalScroll = new ItemPortalScroll("portal_scroll").setCreativeTab(CreativeTabs.TOOLS).setMaxStackSize(40);
+		recallMirror = new ItemPortalScroll("recall_mirror").setCreativeTab(CreativeTabs.TOOLS).setMaxStackSize(1);
 	}
 	
 	@SubscribeEvent
 	public static void registerItems(RegistryEvent.Register<Item> event)
 	{
-		event.getRegistry().registerAll(tutorialItem);
+		event.getRegistry().registerAll(portalScroll);
+		event.getRegistry().registerAll(recallMirror);
 	}
 
 
 	@SubscribeEvent
 	public static void registerRenders(ModelRegistryEvent event)
 	{
-		registerRender(tutorialItem);
+		registerRender(portalScroll);
+		registerRender(recallMirror);
 		registerRender(Item.getItemFromBlock(ModBlocks.BUTT_BLOCK));
 	}
 
