@@ -29,9 +29,11 @@ public class ModItems
 	}
 
 
+	@SubscribeEvent
 	public static void registerRenders(ModelRegistryEvent event)
 	{
 		registerRender(tutorialItem);
+		registerRender(Item.getItemFromBlock(ModBlocks.BUTT_BLOCK));
 	}
 
 	private static void registerRender(Item item)
