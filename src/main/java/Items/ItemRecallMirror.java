@@ -26,16 +26,23 @@ public class ItemRecallMirror extends Item{
     public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn)
     {
         ItemStack itemstack = playerIn.getHeldItem(handIn);
-
-        BlockPos bed = playerIn.getBedLocation();
-        double bedX = bed.getX();
-        double bedY = bed.getY();
-        double bedZ = bed.getZ();
+        boolean playerhasbed = true;
         
-        playerIn.setPositionAndUpdate(bedX + 0.5d, bedY+1, bedZ);
+        if(playerIn.bedLocation == null) { playerhasbed = false; }
         
-        worldIn.playSound((EntityPlayer)null, playerIn.posX, playerIn.posY, playerIn.posZ, SoundEvents.ENTITY_ENDERMEN_TELEPORT, SoundCategory.NEUTRAL, 1F, 1F);
-
+        if(playerhasbed) {
+        
+        	BlockPos bed = playerIn.getBedLocation();
+        	double bedX = bed.getX();
+        	double bedY = bed.getY();
+        	double bedZ = bed.getZ();
+        
+        	playerIn.setPositionAndUpdate(bedX, bedY+1, bedZ);
+        	
+        	playerIn.getCooldownTracker().setCooldown(this, 200);
+            	
+        	worldIn.playSound((EntityPlayer)null, playerIn.posX, playerIn.posY, playerIn.posZ, SoundEvents.ENTITY_ENDERMEN_TELEPORT, SoundCategory.NEUTRAL, 1F, 1F);
+        }
         return new ActionResult<ItemStack>(EnumActionResult.SUCCESS, itemstack);
     }
 }
