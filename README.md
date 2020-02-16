@@ -2,7 +2,15 @@
 
 **DOWNLOADS** *(Minecraft 1.12.2)*
 
-**Version 1.01** -  [Download](https://github.com/GodGMN/RecallMirror/raw/master/RecallMirror-1.01.jar)
+**Version 1.11** - [Download](https://github.com/GodGMN/RecallMirror/raw/master/RecallMirror-1.11.jar)
+
+Version changes: added lore on the Nether Mirror to display extra info like depth so you can know if you were in a cave or in the surface for example.
+
+**Version 1.10**
+
+Version changes: added Nether Mirrors. They let you go back to your last Recall Mirror teleport position.
+
+**Version 1.01**
 
 Version changes: fixed a bug when using the Recall Mirror without a bed.
 
@@ -14,7 +22,7 @@ Mod published. Portal Scrolls are not working so they are purely cosmetics for i
 ## **HOW TO USE THIS MOD**
 
 
-Right now it only adds three items:
+Right now it only adds four items:
 
 
  
@@ -53,3 +61,16 @@ In the future, it will be used to create a single use portal to your bed. In you
 **An item that will teleport you to your bed.**
 
 Infinite uses. If you don't have a bed it won't work.
+
+ 
+
+ 
+
+## **Nether Recall Mirror**
+
+
+![Crafting for the nether recall mirror](https://imgur.com/b1zbAXR.png)
+
+**An item that will teleport you back to where you used the Recall Mirror the last time.**
+
+Infinite uses. You need to use a Recall Mirror first.
