@@ -6,19 +6,6 @@
 
 Version changes: added lore on the Nether Mirror to display extra info like depth so you can know if you were in a cave or in the surface for example.
 
-**Version 1.10**
-
-Version changes: added Nether Mirrors. They let you go back to your last Recall Mirror teleport position.
-
-**Version 1.01**
-
-Version changes: fixed a bug when using the Recall Mirror without a bed.
-
-**Version 1.00**
-
-Mod published. Portal Scrolls are not working so they are purely cosmetics for item frames. The block of literal shit doesn't have any property yet but you can craft and place it.
-
-
 ## **HOW TO USE THIS MOD**
 
 
@@ -74,3 +61,21 @@ Infinite uses. If you don't have a bed it won't work.
 **An item that will teleport you back to where you used the Recall Mirror the last time.**
 
 Infinite uses. You need to use a Recall Mirror first.
+
+## **Changelog**
+
+**Version 1.11**
+
+Version changes: added lore on the Nether Mirror to display extra info like depth so you can know if you were in a cave or in the surface for example.
+
+**Version 1.10**
+
+Version changes: added Nether Mirrors. They let you go back to your last Recall Mirror teleport position.
+
+**Version 1.01**
+
+Version changes: fixed a bug when using the Recall Mirror without a bed.
+
+**Version 1.00**
+
+Mod published. Portal Scrolls are not working so they are purely cosmetics for item frames. The block of literal shit doesn't have any property yet but you can craft and place it.
