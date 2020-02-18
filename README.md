@@ -27,6 +27,7 @@ The texture will be updated in the future so it can be even more disgusting. It 
  ![Crafting for the portal scroll](https://imgur.com/WsEM0G7.png)
 
 **This item teleports you to your bed or world spawn.**
+
 Single use Recall Mirrors, basically.
 
 ## **Recall Mirror**
