@@ -2,9 +2,11 @@
 
 **DOWNLOADS** *(Minecraft 1.12.2)*
 
-**Version 1.2.1** - [Download](https://github.com/GodGMN/RecallMirror/raw/master/RecallMirror-1.2.1.jar)
+**Version 1.3.0** - [Download](https://github.com/GodGMN/RecallMirror/raw/master/RecallMirror-1.3.0.jar)
 
-* Fixed Portal Scroll recipe so it doesn't overlap the "Blueprint" Buildcraft recipe. Recipe below.
+* Added a texture change if the Nether Recall Mirror is ready to bring you back to your old location
+* Added a recipe to get a Nether Recall Mirror putting another one in the crafting grid. This will clean any old coordinates in the item, making it go to your bed or spawn again.
+* Changed the recipe for the Nether Recall Mirror. Now needs four extra diamonds, recipe below.
 
 ## **HOW TO USE THIS MOD**
 
@@ -37,13 +39,30 @@ This item teleports you to your bed or world spawn. Infinite uses.
 
 ## **Nether Recall Mirror**
 
-![Crafting for the nether recall mirror](https://imgur.com/b1zbAXR.png)
+![Crafting for the nether recall mirror](https://imgur.com/PHYC3NP.png)
 
-**Improved Recall Mirror. It can also teleport you back to your last location before going to bed/spawn.**
+**Improved Recall Mirror.**
 
-The crafting will change in the future to make it more balanced. Infinite uses. 
+ It can also teleport you back to your last location before going to bed/spawn. Infinite uses.
+ 
+ If it's ready to bring you to your **bed**, it will display this texture ![Nether recall mirror texture 1](https://imgur.com/cfEnWbT.png), if it's ready to bring you back to your last location, it will look like this ![Nether recall mirror texture 2](https://imgur.com/nM9CVFR.png)
+ 
+ You can also clean the mirror putting it in your crafting table (The inventory 2x2 one will do). This will remove any stored coordinates so the item can bring you back to bed.
+ 
+ ![Cleaning recipe for the nether recall mirror](https://imgur.com/lSFFRZZ.png)
+
 
 ## **Changelog**
+
+**Version 1.3.0** - **Current**
+
+* Added a texture change if the Nether Recall Mirror is ready to bring you back to your old location
+* Added a recipe to get a Nether Recall Mirror putting another one in the crafting grid. This will clean any old coordinates in the item, making it go to your bed or spawn again.
+* Changed the recipe for the Nether Recall Mirror. Now needs four extra diamonds.
+
+**Version 1.2.1**
+
+* Fixed Portal Scroll recipe so it doesn't overlap the "Blueprint" Buildcraft recipe.
 
 **Version 1.2.0**
 
@@ -74,4 +93,4 @@ The crafting will change in the future to make it more balanced. Infinite uses.
 
 No one asked but I'm curious about how do others set their version number. For me it's simple: the first number is reserved for big updates. Will probably stay in 1 forever. The second number is the actual update version, whenever I add something new, it will grow by one. The third and last number grows by one everytime I fix something like a bug or I update a description. Goes back to zero with new "second number" updates.
 
-What does this mean to you? Probably nothing, but if you are in version, let's say 1.4.2 and latest is 1.4.4 I have probably fixed some descriptions or bugs. If it's 1.5.0 you're probably missing out a new item or functionality.
+What does this mean to you? Probably nothing, but if you are in version, let's say 1.4.2 and latest is 1.4.4 I have probably fixed some descriptions or bugs. If latest is for example 1.5.0, you're probably missing out a new item or functionality.
