@@ -2,8 +2,6 @@ package Items;
 
 import java.util.List;
 
-import com.sun.istack.internal.Nullable;
-
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EntityLivingBase;
@@ -71,7 +69,7 @@ public class ItemNetherRecallMirror extends Item{
 	        	this.addPropertyOverride(new ResourceLocation("charged"), new IItemPropertyGetter() //this sets an unknown value to 1. 0 = regular sprite, 1 = charged sprite.
 	            {
 	                @SideOnly(Side.CLIENT)
-	                public float apply(ItemStack stack, @Nullable World worldIn, @Nullable EntityLivingBase entityIn) //it will change sprite to charged.
+	                public float apply(ItemStack stack, World worldIn, EntityLivingBase entityIn) //it will change sprite to charged.
 	                {
 	                    return 1.0F; //this is the said unknown value. More info about it inside its .json
 	                }
@@ -101,7 +99,7 @@ public class ItemNetherRecallMirror extends Item{
 	        	this.addPropertyOverride(new ResourceLocation("charged"), new IItemPropertyGetter() //this is to change the mirror back to regular sprite
 	            {
 	                @SideOnly(Side.CLIENT)
-	                public float apply(ItemStack stack, @Nullable World worldIn, @Nullable EntityLivingBase entityIn)
+	                public float apply(ItemStack stack, World worldIn, EntityLivingBase entityIn)
 	                {
 	                    return 0.0F;
 	                }
