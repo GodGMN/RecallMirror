@@ -2,12 +2,9 @@
 
 **DOWNLOADS** *(Minecraft 1.12.2)*
 
-**Version 1.2.0** - [Download](https://github.com/GodGMN/RecallMirror/raw/master/RecallMirror-1.2.0.jar)
+**Version 1.2.1** - [Download](https://github.com/GodGMN/RecallMirror/raw/master/RecallMirror-1.2.1.jar)
 
-* Portal Scrolls now work as a single use Recall Mirror.
-* The Nether Recall Mirror has been updated and now works as an improved Recall Mirror that can teleport you back to your original location.
-* The crafting needs to be more expensive since the upgrade from Recall Mirror to Nether Recall Mirror is pretty much for free.
-* Since the mod is now 100% working without any game-breaking bug, it's out of beta for now. It still has room for improvement.
+* Fixed Portal Scroll recipe so it doesn't overlap the "Blueprint" Buildcraft recipe. Recipe below.
 
 ## **HOW TO USE THIS MOD**
 
@@ -24,7 +21,7 @@ The texture will be updated in the future so it can be even more disgusting. It 
 
 ## **Portal Scroll**
 
- ![Crafting for the portal scroll](https://imgur.com/WsEM0G7.png)
+ ![Crafting for the portal scroll](https://imgur.com/yRwhJv5.png)
 
 **This item teleports you to your bed or world spawn.**
 
@@ -47,6 +44,13 @@ This item teleports you to your bed or world spawn. Infinite uses.
 The crafting will change in the future to make it more balanced. Infinite uses. 
 
 ## **Changelog**
+
+**Version 1.2.0**
+
+* Portal Scrolls now work as a single use Recall Mirror.
+* The Nether Recall Mirror has been updated and now works as an improved Recall Mirror that can teleport you back to your original location.
+* The crafting needs to be more expensive since the upgrade from Recall Mirror to Nether Recall Mirror is pretty much for free.
+* Since the mod is now 100% working without any game-breaking bug, it's out of beta for now. It still has room for improvement.
 
 **Version beta 1.1.1**
 
