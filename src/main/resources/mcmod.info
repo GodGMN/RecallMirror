@@ -1,0 +1,16 @@
+[
+{
+  "modid": "recallmirror",
+  "name": "Recall Mirror",
+  "description": "A mod that adds a recall mirror. Using it will teleport you back to your bed. I copied it from Terraria.",
+  "version": "1.2.1",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "GodGMN 6902 on Discord",
+  "authorList": ["GodGMN"],
+  "credits": "Big thanks to the Minecraft Mod Development discord server who helped me a LOT, specially Commoble, TelepathicGrunt, Tslat and DarkCow",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

@@ -1,0 +1,35 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":
+    [
+        "F#F",
+        "#G#",
+        "F#F"
+    ],
+    "key":
+    {
+        "#":
+        {
+            "item": "minecraft:dirt",
+            "data": 0
+        },
+        
+        "G":
+        {
+            "item": "minecraft:dye",
+            "data": 3
+        },
+        
+        "F":
+        {
+            "item": "minecraft:rotten_flesh",
+            "data": 0
+        }
+    },
+    
+    "result": {
+        "item": "recallmirror:butt_block",
+        "data": 0,
+        "count": 16
+    }
+}
