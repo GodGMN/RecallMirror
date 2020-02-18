@@ -32,9 +32,20 @@ public class ItemNetherRecallMirror extends Item{
 		setRegistryName(name);
 		this.maxStackSize = 1;
         this.setCreativeTab(CreativeTabs.TOOLS);
+        
+        this.addPropertyOverride(new ResourceLocation("charged"), new IItemPropertyGetter() //this sets an unknown value to 1. 0 = regular sprite, 1 = charged sprite.
+	            {
+        			@Override
+	                public float apply(ItemStack stack, World worldIn, EntityLivingBase entityIn) //it will change sprite to charged.
+	                {
+	                	NBTTagCompound tag = stack.getTagCompound();
+	                	if(tag == null || !tag.getBoolean("used")) return 0F;
+	                	else return 1F;
+	                }
+	            });
 	}
 	
-	@Override
+	@Override	
     public void addInformation(ItemStack stack, World player, List<String> list, ITooltipFlag whatisthis) {
 		
         list.add("An upgraded version of the regular Recall Mirror.");
@@ -65,16 +76,6 @@ public class ItemNetherRecallMirror extends Item{
         {
 	        if (!tag.getBoolean("used")) //if the mirror is not used (used = last teleport was to bed/spawn)
 	        {
-	        	
-	        	this.addPropertyOverride(new ResourceLocation("charged"), new IItemPropertyGetter() //this sets an unknown value to 1. 0 = regular sprite, 1 = charged sprite.
-	            {
-	                @SideOnly(Side.CLIENT)
-	                public float apply(ItemStack stack, World worldIn, EntityLivingBase entityIn) //it will change sprite to charged.
-	                {
-	                    return 1.0F; //this is the said unknown value. More info about it inside its .json
-	                }
-	            });
-
 	        	tag.setDouble("PosX", playerIn.posX); //saves coordinates in NBT tags
 	            tag.setDouble("PosY", playerIn.posY);
 	            tag.setDouble("PosZ", playerIn.posZ);
@@ -95,15 +96,6 @@ public class ItemNetherRecallMirror extends Item{
 	        	double tagX = tag.getDouble("PosX"); //gets the saved position and stores it into local variables
 	        	double tagY = tag.getDouble("PosY");
 	        	double tagZ = tag.getDouble("PosZ");
-	        	
-	        	this.addPropertyOverride(new ResourceLocation("charged"), new IItemPropertyGetter() //this is to change the mirror back to regular sprite
-	            {
-	                @SideOnly(Side.CLIENT)
-	                public float apply(ItemStack stack, World worldIn, EntityLivingBase entityIn)
-	                {
-	                    return 0.0F;
-	                }
-	            });
 	        	
 	        	playerIn.setPositionAndUpdate(tagX, tagY, tagZ); //sets player position to stored variables
 	        	

@@ -2,21 +2,27 @@
     "type": "minecraft:crafting_shaped",
     "pattern":
     [
-        "   ",
-        " G ",
-        "   "
+        "###",
+        "#G#",
+        "###"
     ],
     "key":
     {
+        "#":
+        {
+            "item": "minecraft:diamond",
+            "data": 0
+        },
+        
         "G":
         {
-            "item": "recallmirror:nether_recall_mirror",
+            "item": "minecraft:glass_pane",
             "data": 0
         }
     },
     
     "result": {
-        "item": "recallmirror:nether_recall_mirror",
+        "item": "recallmirror:recall_mirror",
         "data": 0,
         "count": 1
     }

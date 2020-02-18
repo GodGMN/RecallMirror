@@ -26,7 +26,8 @@ public class ItemRecallMirror extends Item{
 	public static BlockPos oldPlayerCoords = null;
 	public static Biome oldBiome = null;
 	
-	public ItemRecallMirror(String name) {
+	public ItemRecallMirror(String name)
+	{
 		setUnlocalizedName(name);
 		setRegistryName(name);
 		this.maxStackSize = 1;
