@@ -22,14 +22,14 @@ public class RegistryHandler
 	public static void onBlockRegistry(RegistryEvent.Register<Block> event)
 	{
 		IForgeRegistry<Block> registry = event.getRegistry();
-		registerBlock(registry, "butt_block", new Block(Material.SAND).setCreativeTab(CreativeTabs.DECORATIONS));
+		//registerBlock(registry, "butt_block", new Block(Material.SAND).setCreativeTab(CreativeTabs.DECORATIONS));
 	}
 
     @SubscribeEvent
     public static void onItemRegister(RegistryEvent.Register<Item> event)
     {
     IForgeRegistry<Item> registry = event.getRegistry();
-	registerItem(registry, "butt_block", new ItemBlock(ModBlocks.BUTT_BLOCK));
+	//registerItem(registry, "butt_block", new ItemBlock(ModBlocks.BUTT_BLOCK));
 	//registerItem(registry, "portal_scroll", new ItemPortalScroll(ModItems.tutorialItem));
     }
 
