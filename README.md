@@ -2,24 +2,19 @@
 
 **DOWNLOADS** *(Minecraft 1.12.2)*
 
-**Version 1.3.0** - [Download](https://github.com/GodGMN/RecallMirror/raw/master/RecallMirror-1.3.0.jar)
+Version 1.3.1 - Current
 
-* Added a texture change if the Nether Recall Mirror is ready to bring you back to your old location
-* Added a recipe to get a Nether Recall Mirror putting another one in the crafting grid. This will clean any old coordinates in the item, making it go to your bed or spawn again.
-* Changed the recipe for the Nether Recall Mirror. Now needs four extra diamonds, recipe below.
+
+
+**Version 1.3.1** - [Download](https://github.com/GodGMN/RecallMirror/raw/master/RecallMirror-1.3.1.jar)
+
+* Published to Curseforge since I feel it's bug-free and more polished now.
+* Removed the Block of Literal Shit. It was put in the game as a test and joke block. It doesn't fit this mod and it didn't have any usage or even proper textures/properties.
 
 ## **HOW TO USE THIS MOD**
 
 
-It adds four items:
-
-## **Block of literal shit**
-
-![Crafting for the block of literal shit](https://imgur.com/fRBPvPz.png)
-
-**A purely cosmetic item.**
-
-The texture will be updated in the future so it can be even more disgusting. It doesn't have any property yet so it sounds like stone and can be insta mined with your bare hands.
+It adds three items:
 
 ## **Portal Scroll**
 
@@ -54,7 +49,12 @@ This item teleports you to your bed or world spawn. Infinite uses.
 
 ## **Changelog**
 
-**Version 1.3.0** - **Current**
+**Version 1.3.1** - **Current**
+
+* Published to Curseforge since I feel it's bug-free and more polished now.
+* Removed the Block of Literal Shit. It was put in the game as a test and joke block. It doesn't fit this mod and it didn't have any usage or even proper textures/properties.
+
+**Version 1.3.0**
 
 * Added a texture change if the Nether Recall Mirror is ready to bring you back to your old location
 * Added a recipe to get a Nether Recall Mirror putting another one in the crafting grid. This will clean any old coordinates in the item, making it go to your bed or spawn again.
