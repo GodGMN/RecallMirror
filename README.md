@@ -86,11 +86,3 @@ This item teleports you to your bed or world spawn. Infinite uses.
 **Version beta 1.0.0**
 
 * Mod published. Portal Scrolls are not working so they are purely cosmetics for item frames. The block of literal shit doesn't have any property yet but you can craft and place it.
-
-----
-
-**How do I set up version number?**
-
-No one asked but I'm curious about how do others set their version number. For me it's simple: the first number is reserved for big updates. Will probably stay in 1 forever. The second number is the actual update version, whenever I add something new, it will grow by one. The third and last number grows by one everytime I fix something like a bug or I update a description. Goes back to zero with new "second number" updates.
-
-What does this mean to you? Probably nothing, but if you are in version, let's say 1.4.2 and latest is 1.4.4 I have probably fixed some descriptions or bugs. If latest is for example 1.5.0, you're probably missing out a new item or functionality.
